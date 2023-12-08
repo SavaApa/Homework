@@ -5,51 +5,51 @@ import java.util.*;
 public class MapEx {
 
     public static void main(String[] args) {
-//        Map<String, String> map = new HashMap<>();
-//        map.put("aaaaa", "AAAAA");
-//        map.put("cccc", "CCCCC");
-//        map.put("dd", "BBBBB");
-//        map.put("ddd", "DDDDD");
-//        map.put("ee", "EEEEE");
-//        map.put("fffffff", "FFFF");
-//        map.put("bbb", "BBBBB");
-//        map.put("abc", "cba");
-//        findCount(map);
-//        reverse((map));
-//
-//        Map<String, Integer> mapSI = new HashMap<>();
-//        mapSI.put("Ab", 1);
-//        mapSI.put("B", 2);
-//        mapSI.put("Ac", 3);
-//        mapSI.put("D", 4);
-//        mapSI.put("Ad", 5);
-//        mapSI.put("E", 6);
-//        int sum = countSum(mapSI);
-//        System.out.println("Cуммa всех значений " + sum);
-//
-//        math(mapSI);
-//
-//
-//        Map<Integer, List<String>> integerListMap = new HashMap<>();
-//        integerListMap.put(2, new ArrayList<>(Arrays.asList("trak", "mapa", "java")));
-//        integerListMap.put(4, new ArrayList<>(Arrays.asList("Gazon", "Harri Potterr", "Sava")));
-//        integerListMap.put(7, new ArrayList<>(Arrays.asList("arka", "Ozon", "ukrop")));
-//        for (Map.Entry<Integer, List<String>> map1 : integerListMap.entrySet()) {
-//            for (String string : map1.getValue()) {
-//                if (start(string)) {
-//                    System.out.println(string + " начинаются с гласной буквы");
-//                }
-//            }
-//        }
-//
-//        charList(integerListMap);
-//
-//        Map<Integer, Integer> integerMap = new HashMap<>();
-//        integerMap.put(2, 0);
-//        integerMap.put(14, 11);
-//        integerMap.put(4, 3);
-//        integerMap.put(35, 33);
-//        maxKey(integerMap);
+        Map<String, String> map = new HashMap<>();
+        map.put("aaaaa", "AAAAA");
+        map.put("cccc", "CCCCC");
+        map.put("dd", "BBBBB");
+        map.put("ddd", "DDDDD");
+        map.put("ee", "EEEEE");
+        map.put("fffffff", "FFFF");
+        map.put("bbb", "BBBBB");
+        map.put("abc", "cba");
+        findCount(map);
+        reverse((map));
+
+        Map<String, Integer> mapSI = new HashMap<>();
+        mapSI.put("Ab", 1);
+        mapSI.put("B", 2);
+        mapSI.put("Ac", 3);
+        mapSI.put("D", 4);
+        mapSI.put("Ad", 5);
+        mapSI.put("E", 6);
+        int sum = countSum(mapSI);
+        System.out.println("Cуммa всех значений " + sum);
+
+        math(mapSI);
+
+
+        Map<Integer, List<String>> integerListMap = new HashMap<>();
+        integerListMap.put(2, new ArrayList<>(Arrays.asList("trak", "mapa", "java")));
+        integerListMap.put(4, new ArrayList<>(Arrays.asList("Gazon", "Harri Potterr", "Sava")));
+        integerListMap.put(7, new ArrayList<>(Arrays.asList("arka", "Ozon", "ukrop")));
+        for (Map.Entry<Integer, List<String>> map1 : integerListMap.entrySet()) {
+            for (String string : map1.getValue()) {
+                if (start(string)) {
+                    System.out.println(string + " начинаются с гласной буквы");
+                }
+            }
+        }
+
+        charList(integerListMap);
+
+        Map<Integer, Integer> integerMap = new HashMap<>();
+        integerMap.put(2, 0);
+        integerMap.put(14, 11);
+        integerMap.put(4, 3);
+        integerMap.put(35, 33);
+        maxKey(integerMap);
 
         Map<Integer, Integer> integerMap1 = new HashMap<>();
         integerMap1.put(2, 0);
