@@ -23,7 +23,8 @@ public class Task {
 
         Map<User, String> userStringMap = new TreeMap<>();
         userStringMap.put(new User("Sava", 23), "S");
-        userStringMap.put(new User("Lana", 18), "L");
+        userStringMap.put(new User("Zana", 18), "L");
+        userStringMap.put(new User("Ana" ,30), "L");
         System.out.println(userStringMap);
 
         Map<User, String> nameStringMap = new TreeMap<>();
