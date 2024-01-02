@@ -33,11 +33,14 @@ public class Generator extends Participant {
         return list;
     }
 
-    public static <T extends Participant> Map<Team<T>, List<T>> generator(Class<T> t){
-        Map<Team<T>, List<T>> map = new HashMap<>();
+    public static <T extends Participant> Set<Team<T>> generator(Class<T> t){
+        Set<Team<T>> set = new HashSet<>();
         for (int i = 0; i < 25; i++) {
-            map.put(new Team<>(FAKER.team().name()), genParti(t));
+            set.add(new Team<>(FAKER.team().name(), genParti(t)));
         }
-        return map;
+        for (Team<T> teams : set) {
+            System.out.println(teams);
+        }
+        return set;
     }
 }

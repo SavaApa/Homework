@@ -8,9 +8,11 @@ public class Team<T extends Participant> {
     private static final Faker FAKER = new Faker();
 
     private String name;
+    private List<T> participant;
 
-    public Team(String name) {
+    public Team(String name, List<T> participant) {
         this.name = name;
+        this.participant = participant;
     }
 
     public String getName() {
@@ -21,41 +23,20 @@ public class Team<T extends Participant> {
         this.name = name;
     }
 
+    public List<T> getParticipant() {
+        return participant;
+    }
+
+    public void setParticipant(List<T> participant) {
+        this.participant = participant;
+
+    }
+
     @Override
     public String toString() {
         return "Team{" +
                 "name='" + name + '\'' +
+                ", participant=" + participant +
                 '}';
     }
-
-    public static <T extends Participant> void play(Map<Team<T>, List<T>> d) {
-        Map<Team<T>, Double> map = new HashMap<>();
-        for (Team<T> team1 : d.keySet()) {
-            for (Team<T> team2 : d.keySet()) {
-                double result = getRandomValue();
-                if (team1 != team2) {
-                    if (result == 1) {
-                        map.put(team1, 1.0);
-                        map.put(team2, 0.0);
-                    } else if (result == 0.5) {
-                        map.put(team1, 0.5);
-                        map.put(team2, 0.5);
-                    } else {
-                        map.put(team1, 0.0);
-                        map.put(team2, 1.0);
-                    }
-                }
-            }
-        }
-        for (Map.Entry<Team<T>, Double> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-    }
-    private static double getRandomValue() {
-        double[] values = {0.0, 0.5, 1.0};
-        Random random = new Random();
-        int randomIndex = random.nextInt(values.length);
-        return values[randomIndex];
-    }
-
 }
