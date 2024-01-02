@@ -23,7 +23,6 @@ public class Handler {
         Set<Team<Pupil>> teamPupil = generator(Pupil.class);
         Play.play(teamPupil);
         System.out.println("_------------------------------");
-
     }
 }
 
