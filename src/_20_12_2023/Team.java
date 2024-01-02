@@ -33,15 +33,17 @@ public class Team<T extends Participant> {
         for (Team<T> team1 : d.keySet()) {
             for (Team<T> team2 : d.keySet()) {
                 double result = getRandomValue();
-                if (result == 1) {
-                    map.put(team1, 1.0);
-                    map.put(team2, 0.0);
-                } else if (result == 0.5) {
-                    map.put(team1, 0.5);
-                    map.put(team2, 0.5);
-                } else {
-                    map.put(team1, 0.0);
-                    map.put(team2, 1.0);
+                if (team1 != team2) {
+                    if (result == 1) {
+                        map.put(team1, 1.0);
+                        map.put(team2, 0.0);
+                    } else if (result == 0.5) {
+                        map.put(team1, 0.5);
+                        map.put(team2, 0.5);
+                    } else {
+                        map.put(team1, 0.0);
+                        map.put(team2, 1.0);
+                    }
                 }
             }
         }
