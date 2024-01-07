@@ -5,8 +5,6 @@ import com.github.javafaker.Faker;
 import java.util.*;
 
 public class Team<T extends Participant> {
-    private static final Faker FAKER = new Faker();
-
     private String name;
     private List<T> participant;
 
@@ -39,4 +37,5 @@ public class Team<T extends Participant> {
                 ", participant=" + participant +
                 '}';
     }
+
 }
