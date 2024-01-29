@@ -1,12 +1,10 @@
-package _20_12_2023;
-
-import com.github.javafaker.Faker;
+package NEW_YEAR;
 
 import java.util.*;
 
 public class Team<T extends Participant> {
     private String name;
-    private List<T> participant;
+    private final List<T> participant;
 
     public Team(String name, List<T> participant) {
         this.name = name;
@@ -21,13 +19,8 @@ public class Team<T extends Participant> {
         this.name = name;
     }
 
-    public List<T> getParticipant() {
-        return participant;
-    }
-
-    public void setParticipant(List<T> participant) {
-        this.participant = participant;
-
+    public List<Participant> getParticipant() {
+        return (List<Participant>) participant;
     }
 
     @Override

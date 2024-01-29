@@ -1,7 +1,4 @@
-package _20_12_2023;
-
-import java.util.Objects;
-import java.util.Random;
+package NEW_YEAR;
 
 public class Participant {
     private String name;
@@ -23,11 +20,6 @@ public class Participant {
     public int getAge() {
         return age;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
 
     @Override
     public String toString() {

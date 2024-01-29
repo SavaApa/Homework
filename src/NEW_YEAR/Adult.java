@@ -1,6 +1,4 @@
-package _20_12_2023;
-
-import java.util.Map;
+package NEW_YEAR;
 
 class Adult extends Participant {
     public Adult(String name, int age) {

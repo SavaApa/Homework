@@ -1,4 +1,4 @@
-package _20_12_2023;
+package NEW_YEAR;
 
 import com.github.javafaker.Faker;
 
@@ -11,6 +11,7 @@ public class Generator extends Participant {
     public Generator(String name, int age) {
         super(name, age);
     }
+
     public static <T> List<T> genParti(Class<T> t) {
         List<T> list = new ArrayList<>();
         int number = 4;
@@ -33,13 +34,10 @@ public class Generator extends Participant {
         return list;
     }
 
-    public static <T extends Participant> Set<Team<T>> generator(Class<T> t){
+    public static <T extends Participant> Set<Team<T>> generator(Class<T> t) {
         Set<Team<T>> set = new HashSet<>();
         for (int i = 0; i < 25; i++) {
             set.add(new Team<>(FAKER.team().name(), genParti(t)));
-        }
-        for (Team<T> teams : set) {
-            System.out.println(teams);
         }
         return set;
     }
