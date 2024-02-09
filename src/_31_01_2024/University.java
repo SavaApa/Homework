@@ -1,9 +1,13 @@
 package _31_01_2024;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
+@Setter
+@Getter
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class University {
     private String name;
@@ -14,22 +18,6 @@ public class University {
 
     public University(String name, List<Department> departments) {
         this.name = name;
-        this.departments = departments;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<Department> getDepartments() {
-        return departments;
-    }
-
-    public void setDepartments(List<Department> departments) {
         this.departments = departments;
     }
 

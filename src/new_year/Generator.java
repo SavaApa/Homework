@@ -1,4 +1,4 @@
-package NEW_YEAR;
+package new_year;
 
 import com.github.javafaker.Faker;
 

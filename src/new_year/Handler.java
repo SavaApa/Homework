@@ -1,11 +1,11 @@
-package NEW_YEAR;
+package new_year;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import static NEW_YEAR.Utility.*;
+import static new_year.Utility.*;
 
 
 public class Handler {

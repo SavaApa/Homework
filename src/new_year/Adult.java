@@ -1,4 +1,4 @@
-package NEW_YEAR;
+package new_year;
 
 class Adult extends Participant {
     public Adult(String name, int age) {

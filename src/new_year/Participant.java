@@ -1,6 +1,9 @@
-package NEW_YEAR;
+package new_year;
+
+import lombok.Setter;
 
 public class Participant {
+    @Setter
     private String name;
     private int age;
 
@@ -11,10 +14,6 @@ public class Participant {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public int getAge() {

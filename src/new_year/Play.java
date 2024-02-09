@@ -1,4 +1,4 @@
-package NEW_YEAR;
+package new_year;
 
 import java.util.*;
 
@@ -27,7 +27,6 @@ public class Play extends Participant {
             System.out.println(entry.getKey().getName() + ": " + entry.getValue());
         }
 
-        // Создаем новую мапу для хранения результатов
         Map<Team<T>, Double> finalResults = new LinkedHashMap<>();
         for (Map.Entry<Team<T>, Double> entry : results) {
             finalResults.put(entry.getKey(), entry.getValue());
@@ -39,7 +38,6 @@ public class Play extends Participant {
     private static <T extends Participant> void playMatch(Team<T> team1, Team<T> team2, List<Map.Entry<Team<T>, Double>> results) {
         double result = getRandomValue();
 
-        // Находим индексы команд в списке results
         int index1 = findTeamIndex(team1, results);
         int index2 = findTeamIndex(team2, results);
 
@@ -67,7 +65,7 @@ public class Play extends Participant {
                 return i;
             }
         }
-        return -1; // Возвращаем -1, если команда не найдена (это можно обработать дополнительно)
+        return -1;
     }
 
     private static double getRandomValue() {
