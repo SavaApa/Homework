@@ -1,4 +1,4 @@
-package new_year.Exception;
+package new_year.exception;
 
 public class CantFindSuchCommand extends RuntimeException{
     public CantFindSuchCommand (String message){

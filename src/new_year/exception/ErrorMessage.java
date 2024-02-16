@@ -1,4 +1,4 @@
-package new_year.Exception;
+package new_year.exception;
 
 public class ErrorMessage {
     public static final String NO_TEAM_MAX_RESULT = "No_Team_Max_Result";

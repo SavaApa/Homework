@@ -1,6 +1,6 @@
 package new_year;
 
-import new_year.Exception.*;
+import new_year.exception.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
