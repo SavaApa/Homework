@@ -1,4 +1,4 @@
-package new_year.Exception;
+package new_year.exception;
 
 public class NoTeamWithMaxResultException extends RuntimeException{
     public NoTeamWithMaxResultException(String message){
