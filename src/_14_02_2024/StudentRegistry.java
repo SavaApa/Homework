@@ -28,9 +28,7 @@ public class StudentRegistry {
 //    вычисляет средний балл среди всех студентов
     public static double calculateAverageGrade(){
         return studentMap.values().stream()
-                .mapToDouble(Student::getGrade)
-                .average()
-                .orElse(0.0);
+                .collect(Collectors.averagingDouble(Student::getGrade));
     }
 
 //    возвращает список студентов, обучающихся на указанном курсе
