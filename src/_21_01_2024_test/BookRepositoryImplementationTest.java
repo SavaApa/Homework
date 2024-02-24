@@ -3,8 +3,6 @@ package _21_01_2024_test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,7 +10,6 @@ import java.util.Objects;
 import java.util.Optional;
 
 
-@ExtendWith(MockitoExtension.class)
 class BookRepositoryImplementationTest {
     private static final BookRepositoryImplement BOOK_REPOSITORY_IMPLEMENT = new BookRepositoryImplement();
     private static final Book book1 = new Book("1", "title1", "author1");

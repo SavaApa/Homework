@@ -61,7 +61,7 @@ public class BookRepositoryImplement implements BookRepository {
 
     @Override
     public Optional<Book> findByTitle(String title) {
-        if(title == null){
+        if (title == null) {
             throw new IllegalArgumentException();
         }
         return list.stream()

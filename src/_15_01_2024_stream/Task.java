@@ -1,4 +1,4 @@
-package _15_01_2024;
+package _15_01_2024_stream;
 
 import java.util.*;
 import java.util.stream.Collectors;
